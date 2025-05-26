@@ -1,0 +1,412 @@
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #363636;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu Horizontal no Topo */
+.top-header {
+    background-color: #1d1d1d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.main-nav ul li a:hover::after,
+.main-nav ul li a.active::after {
+    width: 100%;
+}
+
+.main-nav ul li a.active {
+    color: #fff;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Grid de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 12px; /* Ajuste este valor para mais ou menos arredondamento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.project-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.67%; /* Proporção 3:2 */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Navegação de Página */
+.page-navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 90;
+}
+
+.page-navigation a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.page-navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Seção de Detalhes do Projeto */
+.project-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 200;
+    display: none;
+    overflow-y: auto;
+}
+
+.project-details.active {
+    display: block;
+}
+
+.details-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.details-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 210;
+}
+
+.details-close a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.details-close a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.details-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+.details-gallery {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.details-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details-gallery img:first-child {
+    grid-column: span 2;
+}
+
+.details-info {
+    flex: 1;
+    background-color: #222;
+    padding: 30px;
+    position: sticky;
+    top: 40px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    /* Garantir que a box de info tenha a mesma proporção da imagem */
+    aspect-ratio: 1/1.5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.details-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.details-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.details-info .specs {
+    margin-top: 30px;
+}
+
+.details-info .specs h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.details-info .specs-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.details-info .specs-item:last-child {
+    border-bottom: none;
+}
+
+.details-info .specs-label {
+    color: #999;
+}
+
+.details-info .specs-value {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .details-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .details-content {
+        flex-direction: column;
+    }
+    
+    .details-info {
+        aspect-ratio: auto;
+        max-height: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        gap: 20px;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .details-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .details-gallery img:first-child {
+        grid-column: span 1;
+    }
+    
+    .page-navigation {
+        display: none;
+    }
+    
+    .details-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .main-nav ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Melhorias de acessibilidade para dispositivos touch */
+@media (hover: none) {
+    .project-overlay {
+        opacity: 0.7;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .project-item:active {
+        transform: scale(0.98);
+    }
+}
