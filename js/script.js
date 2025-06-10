@@ -2,7 +2,7 @@
 const projectsData = {
     'supra-mk4': {
         title: 'Toyota Supra MK4',
-        description: 'Render 3D do icônico Toyota Supra MK4, um dos carros mais emblemáticos da cultura tuning e dos filmes de Velozes e Furiosos. Este modelo foi criado com atenção especial aos detalhes da carroceria e acabamentos.',
+        description: 'Render 3D do icônico Toyota Supra MK4',
         year: '1993',
         images: [
             'images/supra/supra1.jpg',
@@ -12,13 +12,13 @@ const projectsData = {
             'images/supra/supra1.jpg',
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '1.2 milhões',
-            'Texturas': '4K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '8 horas',
-            'Motor': '2JZ-GTE Twin-Turbo',
-            'Potência': '320 HP'
+            'Software': 'teste',
+            'Polígonos': 'testee',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'test',
+            'Motor': 'teste',
+            'Potência': 'teste'
         }
     },
     'audi': {
@@ -32,13 +32,13 @@ const projectsData = {
             'images/r8/r8_3.jpg',
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '1.5 milhões',
-            'Texturas': '4K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '10 horas',
-            'Motor': 'RB26DETT',
-            'Potência': '280 HP'
+            'Software': 'Teste',
+            'Polígonos': 'Teste',
+            'Texturas': 'Teste',
+            'Renderizador': 'Teste',
+            'Tempo de Render': 'Teste',
+            'Motor': 'Teste',
+            'Potência': 'Testee'
         }
     },
     'rx7': {
@@ -52,13 +52,13 @@ const projectsData = {
             'images/placeholder-rx7-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '1.3 milhões',
-            'Texturas': '4K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '9 horas',
-            'Motor': '13B-REW Rotary',
-            'Potência': '255 HP'
+            'Software': 'teste',
+            'Polígonos': 'testee',
+            'Texturas': 'teste',
+            'Renderizador': 'testee',
+            'Tempo de Render': 'teste',
+            'Motor': 'teste',
+            'Potência': 'teste'
         }
     },
     'LaFerrari': {
@@ -67,43 +67,37 @@ const projectsData = {
         year: '2013',
         images: [
             'images/laferrari/laferrari_1.jpg',
-            'images/placeholder-gta-side.jpg',
-            'images/placeholder-gta-rear.jpg',
-            'images/placeholder-gta-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '1.8 milhões',
-            'Texturas': '8K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '12 horas',
-            'Jogo': 'Grand Theft Auto V',
-            'Inspiração': 'Lamborghini/Pagani'
+            'Software': 'teste',
+            'Polígonos': 'teste',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'teste',
+            'Jogo': 'testeV',
+            'Inspiração': 'teste'
         }
     },
     'future': {
         title: 'future',
-        description: 'Modelo 3D ultra-detalhado do McLaren Senna como visto no Forza Horizon 5, recriado com níveis de detalhe superiores ao jogo original, incluindo interior completo e sistema de suspensão.',
-        year: '2021',
+        description: '',
+        year: 'teste',
         images: [
             'images/placeholder-forza-main.jpg',
-            'images/placeholder-forza-side.jpg',
-            'images/placeholder-forza-rear.jpg',
-            'images/placeholder-forza-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '2.2 milhões',
-            'Texturas': '8K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '14 horas',
-            'Jogo': 'Forza Horizon 5',
-            'Motor': 'V8 Twin-Turbo'
+            'Software': 'teste',
+            'Polígonos': 'teste',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'teste',
+            'Jogo': 'teste',
+            'Motor': 'testee'
         }
     },
     'future': {
         title: 'future',
-        description: 'Recriação do icônico BMW M3 GTR do Need for Speed Most Wanted e Heat, com a pintura e modificações exatas do carro do jogo, incluindo o kit de carroceria completo e detalhes de corrida.',
+        description: '.',
         year: '2019',
         images: [
             'images/placeholder-nfs-main.jpg',
@@ -112,19 +106,19 @@ const projectsData = {
             'images/placeholder-nfs-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '1.7 milhões',
-            'Texturas': '4K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '11 horas',
-            'Jogo': 'Need for Speed Heat',
-            'Motor': 'P60B40 V8'
+            'Software': 'testee',
+            'Polígonos': 'teste',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'testee',
+            'Jogo': 'teste',
+            'Motor': 'teste'
         }
     },
     'concept-1': {
         title: 'future',
-        description: 'Conceito original de um hipercarro futurista com linhas agressivas e aerodinâmica avançada. Este design explora novas possibilidades em termos de estética e performance.',
-        year: '2025',
+        description: '.',
+        year: '.',
         images: [
             'images/placeholder-concept1-main.jpg',
             'images/placeholder-concept1-side.jpg',
@@ -132,18 +126,18 @@ const projectsData = {
             'images/placeholder-concept1-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '2.5 milhões',
-            'Texturas': '8K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '16 horas',
-            'Conceito': 'Hipercarro Elétrico',
-            'Potência Teórica': '1800 HP'
+            'Software': 'teste',
+            'Polígonos': 'teste',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'teste',
+            'Conceito': 'teste',
+            'Potência Teórica': 'teste'
         }
     },
     'concept-2': {
         title: 'future',
-        description: 'Conceito original de um GT de luxo com influências de design clássico e tecnologia futurista. Este modelo explora a fusão entre tradição e inovação no design automotivo.',
+        description: '.',
         year: '2025',
         images: [
             'images/placeholder-concept2-main.jpg',
@@ -152,19 +146,19 @@ const projectsData = {
             'images/placeholder-concept2-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '2.3 milhões',
-            'Texturas': '8K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '15 horas',
-            'Conceito': 'Grand Tourer Híbrido',
-            'Potência Teórica': '950 HP'
+            'Software': 'teste',
+            'Polígonos': 'teste',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'teste',
+            'Conceito': 'teste',
+            'Potência Teórica': 'teste'
         }
     },
     'concept-3': {
-        title: 'Future GT Vision',
-        description: 'Visão futurista de um veículo de corrida para competições virtuais, com aerodinâmica extrema e soluções de design que desafiam as limitações da física do mundo real.',
-        year: '2030',
+        title: 'Future',
+        description: '.',
+        year: '.',
         images: [
             'images/placeholder-concept3-main.jpg',
             'images/placeholder-concept3-side.jpg',
@@ -172,13 +166,13 @@ const projectsData = {
             'images/placeholder-concept3-interior.jpg'
         ],
         specs: {
-            'Software': 'Blender 3.5',
-            'Polígonos': '2.8 milhões',
-            'Texturas': '8K PBR',
-            'Renderizador': 'Cycles',
-            'Tempo de Render': '18 horas',
-            'Conceito': 'Vision Gran Turismo',
-            'Potência Teórica': '2200 HP'
+            'Software': 'teste',
+            'Polígonos': 'teste',
+            'Texturas': 'teste',
+            'Renderizador': 'teste',
+            'Tempo de Render': 'teste',
+            'Conceito': 'teste',
+            'Potência Teórica': 'teste'
         }
     }
 };
