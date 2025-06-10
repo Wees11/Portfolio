@@ -43,7 +43,7 @@ const projectsData = {
     },
     'rx7': {
         title: 'Mazda RX7 RocketBunny',
-        description: 'Render 3D do elegante Mazda RX7 RocketBunny, com seu design atemporal e motor rotativo único. Este modelo captura a essência do design japonês dos anos 90 com linhas fluidas e proporções perfeitas.',
+        description: 'Render 3D do Mazda RX7 RocketBunny',
         year: '1992',
         images: [
             'images/rx7/rx7_1.jpg',
